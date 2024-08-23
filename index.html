@@ -24,7 +24,11 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',  
+                        clifford: '#da373d',
+                        bnr: 'rgb(245, 245, 245)', 
+                        primary: 'rgb(171, 239, 95)',
+                        secondary: 'rgba(171, 239, 95, 0.5)',
+                        para: 'rgb(115, 115, 115)',
                     },
                      fontFamily: {
                             manrope: ['Manrope', 'sans-serif'],
@@ -33,10 +37,141 @@
             }
         }
     </script>
+    <style>
+        .ln{
+            background-image: linear-gradient(90deg,rgb(242, 242, 242),rgba(255, 255, 255, 0) 100%);
+        }
+    </style>
 </head>
 
 <body class="font-manrope">
-    <h1>Alhamdulliah</h1>
+   <header class="ln">
+       <!-- this is navbar -->
+       <div class="navbar w-11/12 mx-auto">
+        <div class="navbar-start flex">
+            <div class="w-8 h-8 border bg-primary rounded-full">
+                    <i class="fa-solid fa-arrow-right text-xl -rotate-45 ml-1"></i>
+            </div>
+            
+            <h1 class="text-2xl font-bold ml-4">Rinterio</h1>
+        </div>
+        <div class="navbar-center hidden lg:flex ml-[-70px]">
+            <ul class="menu menu-horizontal  flex items-center text-lg font-medium">
+                <li class="text-black font-semibold">
+                    <a href="#">Home</a>
+                </li>
+                <li class="text-para">
+                    <a href="#">Everything</a>
+                </li>
+                <li class="text-para">
+                    <a href="#">Groceries</a>
+                </li>
+                <li class="text-para">
+                    <a href="#">About</a>
+                </li>
+                <li class="text-para">
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-end hidden sm:flex">
+            <div class="flex gap-3">
+                <i class="fa-solid fa-magnifying-glass border bg-white rounded-full p-2"></i>
+                <i class="fa-solid fa-cart-shopping border bg-white rounded-full p-2"></i>
+            </div>
+          <a class="btn rounded-full bg-primary ml-3">
+            <h3 class="text-black">Book Consult</h3>
+            <div class="w-8 h-8 border bg-black rounded-full">
+                 <i class="fa-solid fa-arrow-right text-xl text-white -rotate-45"></i>
+            </div>
+          </a>
+        </div>
+        <div class="lg:hidden ml-52">
+            <i class="fa-solid fa-bars border bg-white rounded-full p-2"></i>
+         </div>
+        
+      </div>
+      <!-- banner section -->
+       <section class="w-11/12 mx-auto flex items-center flex-col mt-10">
+            <!-- banner img -->
+        <div>
+            <img src="assets/banner.png" alt="">
+        </div>
+        <!-- banner text -->
+         <div>
+            <h1 class="text-6xl font-extrabold text-center mt-6">A barn house of this design has a <br> striking appearance</h1>
+
+            <p class="para text-center mt-6">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the mt-6h natural light.</p>
+            <div class="text-center mt-6 mb-16">
+                 <a class="btn rounded-full bg-secondary">
+                <h3 class="text-black">View details</h3>
+                <div class="w-8 h-8 border bg-primary rounded-full">
+                     <i class="fa-solid fa-arrow-right text-xl text-black -rotate-45"></i>
+                </div>
+              </a>
+            </div>
+           
+         </div>
+       </section>
+   </header>
+   <main>
+        <!-- design section -->
+         <section class="ln">
+            <section class="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 my-5">
+            <!-- text container -->
+             <div class="ml-10">
+                <!-- vector img -->
+                 <div class="hidden lg:block ml-[-70px]">
+                    <img src="assets/Vector.png" alt="">
+                 </div>
+                 <!-- button -->
+                  <div class="text-center mt-4 md:text-left md:mt-0">
+                    <a class="btn rounded-full bg-white">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <h3 class="text-black">About Us</h3>
+                  </a>
+                  </div>
+                 
+                  <h3 class="text-4xl font-extrabold my-5">We design thoughtful,<br>
+                    liveable spaces</h3>
+                   <p class="para text-xs">The barn house captivates with its blend of rustic charm and <br>
+                    modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                    <!-- card 1 -->
+                    <div class="w-11/12 h-32 bg-white flex items-center rounded-xl my-5 gap-4">
+                        <img class="ml-4" src="assets/commercial.png" alt="">
+                        <div class="flex flex-col">
+                            <h5 class="font-bold mb-2">Commercial</h5>
+                            <p>The barn house captivates with its blend <br> of rustic charm and modern.</p>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                     <div>
+                        <div class="w-11/12 h-32 bg-white flex items-center rounded-xl my-4 gap-4">
+                            <img class="ml-4" src="assets/residential.png" alt="">
+                            <div class="flex flex-col">
+                                <h5 class="font-bold mb-2">Residential</h5>
+                                <p>The barn house captivates with its blend <br> of rustic charm and modern.</p>
+                            </div>
+                        </div >
+                     </div>
+             </div>
+             <!-- image -->
+              <div>
+                <div>
+                    <img  class="" src="assets/Rectangle.png" alt="">
+                </div>
+                    
+              </div>
+            </section>
+        </section>
+         <!-- workplace section -->
+          <section>
+            <!-- workplace text container -->
+          </section>
+   </main>
+   <footer>
+
+   </footer>
 </body>
 
 </html>
