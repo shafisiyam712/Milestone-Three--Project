@@ -48,6 +48,7 @@
             background-image: url(assets/bg.jpg);
             background-repeat: no-repeat;
             background-size: cover;
+            object-fit: cover;
         }
     </style>
 </head>
@@ -57,27 +58,27 @@
         <!-- this is navbar -->
         <div class="navbar w-11/12 mx-auto">
             <div class="navbar-start flex">
-                <div class="w-8 h-8 border bg-primary rounded-full">
-                    <i class="fa-solid fa-arrow-right text-xl -rotate-45 ml-1"></i>
+                <div class="w-8 h-8 border bg-primary rounded-full text-center">
+                    <i class="fa-solid fa-arrow-right text-xl -rotate-45"></i>
                 </div>
 
-                <h1 class="text-2xl font-bold ml-4">Rinterio</h1>
+                <h1 class="text-2xl font-extrabold ml-4">Rinterio</h1>
             </div>
             <div class="navbar-center hidden lg:flex ml-[-70px]">
                 <ul class="menu menu-horizontal  flex items-center text-lg font-medium">
-                    <li class="text-black font-semibold">
+                    <li class="text-black font-semibold hover:text-black transition-colors ease-in-out duration-300">
                         <a href="#">Home</a>
                     </li>
-                    <li class="text-para">
+                    <li class="text-para hover:text-black transition-colors ease-in-out duration-300">
                         <a href="#">Services</a>
                     </li>
-                    <li class="text-para">
+                    <li class="text-para hover:text-black transition-colors ease-in-out duration-300">
                         <a href="#">Portfolio</a>
                     </li>
-                    <li class="text-para">
+                    <li class="text-para hover:text-black transition-colors ease-in-out duration-300">
                         <a href="#">Blogs</a>
                     </li>
-                    <li class="text-para">
+                    <li class="text-para hover:text-black transition-colors ease-in-out duration-300">
                         <a href="#">Contact Us</a>
                     </li>
                 </ul>
@@ -88,8 +89,8 @@
                     <i class="fa-solid fa-cart-shopping border bg-white rounded-full p-2"></i>
                 </div>
                 <a class="btn rounded-full bg-primary ml-3">
-                    <h3 class="text-black">Book Consult</h3>
-                    <div class="w-8 h-8 border bg-black rounded-full">
+                    <h3 class="text-black font-extrabold">Book Consult</h3>
+                    <div class="w-8 h-8 border-black bg-black rounded-full">
                         <i class="fa-solid fa-arrow-right text-xl text-white -rotate-45"></i>
                     </div>
                 </a>
@@ -107,16 +108,16 @@
             </div>
             <!-- banner text -->
             <div>
-                <h1 class="text-6xl font-extrabold text-center mt-6">A barn house of this design has a <br> striking
+                <h1 class="text-3xl md:text-6xl font-extrabold text-center mt-6">A barn house of this design has a <br> striking
                     appearance</h1>
 
-                <p class="para text-center mt-6">The barn house captivates with its blend of rustic charm and modern
+                <p class="para text-center text-base mt-6">The barn house captivates with its blend of rustic charm and modern
                     sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the
                     mt-6h natural light.</p>
                 <div class="text-center mt-6 mb-16">
                     <a class="btn rounded-full bg-secondary">
-                        <h3 class="text-black">View details</h3>
-                        <div class="w-8 h-8 border bg-primary rounded-full">
+                        <h3 class="text-black font-extrabold">View details</h3>
+                        <div class="w-8 h-8 border-primary bg-primary rounded-full text-center">
                             <i class="fa-solid fa-arrow-right text-xl text-black -rotate-45"></i>
                         </div>
                     </a>
@@ -143,16 +144,16 @@
                         </a>
                     </div>
 
-                    <h3 class="text-4xl font-extrabold my-6">We design thoughtful,<br>
+                    <h3 class="text-3xl md:text-5xl font-extrabold my-6">We design thoughtful,<br>
                         liveable spaces</h3>
-                    <p class="para text-xs">The barn house captivates with its blend of rustic charm and <br>
+                    <p class="para text-base">The barn house captivates with its blend of rustic charm and <br>
                         modern sophistication, featuring weathered wood, sleek metal accents.</p>
                     <!-- card 1 -->
                     <div class="w-11/12 h-32 bg-white flex items-center rounded-xl my-6 gap-4">
                         <img class="ml-4" src="assets/commercial.png" alt="">
                         <div class="flex flex-col">
                             <h5 class="font-bold mb-2">Commercial</h5>
-                            <p>The barn house captivates with its blend <br> of rustic charm and modern.</p>
+                            <p class="para text-base">The barn house captivates with its blend <br> of rustic charm and modern.</p>
                         </div>
                     </div>
                     <!-- card 2 -->
@@ -161,7 +162,7 @@
                             <img class="ml-4" src="assets/residential.png" alt="">
                             <div class="flex flex-col">
                                 <h5 class="font-bold mb-2">Residential</h5>
-                                <p>The barn house captivates with its blend <br> of rustic charm and modern.</p>
+                                <p class="para text-base">The barn house captivates with its blend <br> of rustic charm and modern.</p>
                             </div>
                         </div>
                     </div>
@@ -188,36 +189,39 @@
                 </div>
 
                 <h3 class="text-4xl font-extrabold my-5 text-center">Our Work Process</h3>
-                <p class="para text-xs text-center">The barn house captivates with its blend of rustic charm and modern
+                <p class="para text-base text-center">The barn house captivates with its blend of rustic charm and modern
                     sophistication, <br> featuring weathered wood, sleek metal accents.</p>
             </div>
             <!-- work place cards -->
-            <div class="w-10/12 mx-auto grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-4  mt-8 mb-5">
+             <div class="w-11/12 mx-auto">
+                 <div class="grid grid-cols-1 gap-4 md:gap-2 md:grid-cols-2 lg:grid-cols-4  mt-8 mb-5 md:ml-8">
                 <!-- card1 -->
                 <div class="bg-[#E7C1D3] w-full md:w-64 h-52 rounded-xl p-6">
                     <img class="" src="assets/concept.png" alt="">
                     <h5 class="font-extrabold my-2">Concepts</h5>
-                    <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                    <p class="para text-base">The barn house captivates with its blend of rustic charm and modern.</p>
                 </div>
                 <!-- card2 -->
                 <div class="bg-[#EFDA6E] w-full md:w-64 h-52 rounded-xl p-6">
                     <img class="" src="assets/flow-chart.png" alt="">
                     <h5 class="font-extrabold my-2">Design Process</h5>
-                    <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                    <p class="para text-base">The barn house captivates with its blend of rustic charm and modern.</p>
                 </div>
                 <!-- card3 -->
                 <div class="bg-[#A4DAC3] w-full md:w-64 h-52 rounded-xl p-6">
                     <img class="" src="assets/vision.png" alt="">
                     <h5 class="font-extrabold my-2">Supervision</h5>
-                    <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                    <p class="para text-base">The barn house captivates with its blend of rustic charm and modern.</p>
                 </div>
                 <!-- card4 -->
                 <div class="bg-[#77AAEA] w-full md:w-64 h-52 rounded-xl p-6">
                     <img class="" src="assets/budget-planning.png" alt="">
                     <h5 class="font-extrabold my-2">Budget Planing</h5>
-                    <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                    <p class="para text-base">The barn house captivates with its blend of rustic charm and modern.</p>
                 </div>
             </div>
+             </div>
+           
         </section>
 
 
@@ -231,12 +235,12 @@
                     <div class="text-center mt-8">
                         <a class="btn rounded-full bg-secondary">
                             <i class="fa-solid fa-arrow-right"></i>
-                            <h3 class="text-black">Explore Our Latest Works</h3>
+                            <h3 class="text-black font-extrabold">Explore Our Latest Works</h3>
                         </a>
                     </div>
 
                     <h3 class="text-4xl font-extrabold my-5 text-center">Our Latest Portfolio</h3>
-                    <p class="para text-xs text-center">The barn house captivates with its blend of rustic charm and
+                    <p class="para text-base text-center">The barn house captivates with its blend of rustic charm and
                         modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
                 </div>
                 <!-- portfolio cards -->
@@ -247,11 +251,11 @@
                             <img class="w-full lg:w-auto" src="assets/img1.png" alt="">
                             <div class="flex flex-col">
                                 <h2 class="font-extrabold mb-2">Commercial</h2>
-                                <p class="para my-4">The barn house captivates with its blend <br> of rustic charm and
+                                <p class="para text-base my-4">The barn house captivates with its blend <br> of rustic charm and
                                     modern.The barn house captivates with its blend of rustic charm and modern.</p>
                                 <div class="flex gap-1">
                                     <h3 class="text-black font-extrabold">View details</h3>
-                                    <div class="w-8 h-8 border bg-primary rounded-full">
+                                    <div class="w-8 h-8 border bg-primary rounded-full text-center">
                                         <i class="fa-solid fa-arrow-right text-xl text-black -rotate-45"></i>
                                     </div>
                                 </div>
@@ -270,13 +274,13 @@
                     <div class="lg:col-span-2 border shadow-sm rounded-xl order-4">
                         <div class="flex flex-col md:flex-row items-center p-5 gap-4">
                             <img class="w-full lg:w-auto" src="assets/img4.png" alt="">
-                            <div class="flex flex-col">
+                            <div class="flex flex-col ml-0">
                                 <h2 class="font-extrabold mb-2">Commercial</h2>
-                                <p class="para my-4">The barn house captivates with its blend of rustic charm and
+                                <p class="para text-base my-4">The barn house captivates with its blend of rustic charm and
                                     modern.</p>
                                 <div class="flex gap-1">
                                     <h3 class="text-black font-extrabold">View details</h3>
-                                    <div class="w-8 h-8 border bg-primary rounded-full">
+                                    <div class="w-8 h-8 border bg-primary rounded-full text-center">
                                         <i class="fa-solid fa-arrow-right text-xl text-black -rotate-45"></i>
                                     </div>
                                 </div>
@@ -297,7 +301,7 @@
         </section>
         <!-- discussion section -->
 
-        <section class="mt-5 w-full h-auto py-20" style="background-image: url(assets/bg.jpg);">
+        <section class="mt-5 mg w-full h-auto py-20">
             <!-- discussion container -->
              <div class="w-11/12 mx-auto">
                 <!-- portfolio text container -->
@@ -306,30 +310,30 @@
                 <div class="text-center mt-8">
                     <a class="btn rounded-full bg-secondary border-secondary">
                         <i class="fa-solid fa-arrow-right"></i>
-                        <h3 class="text-black">Let's Connect</h3>
+                        <h3 class="text-black font-extrabold">Let's Connect</h3>
                     </a>
                 </div>
 
                 <h3 class="text-4xl font-extrabold my-5 text-center">Let’s Discuss Next Project</h3>
-                <p class="para text-xs text-center">The barn house captivates with its blend of rustic charm and
+                <p class="para text-base text-center">The barn house captivates with its blend of rustic charm and
                     modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
             </div>
             <!-- input section -->
 
              <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-3">
                 <!-- input1 -->
-                 <input class="bg-white rounded-full h-14" type="text" placeholder="First Name*">
+                 <input class="bg-white rounded-full h-14 p-5" type="text" placeholder="First Name*">
                  <!-- input2 -->
-                 <input class="bg-white rounded-full h-14" type="text" placeholder="Last Name*">
+                 <input class="bg-white rounded-full h-14 p-5" type="text" placeholder="Last Name*">
                   <!-- input3 -->
-                  <input class="bg-white rounded-full h-14" type="text" placeholder="Phone Number*">
+                  <input class="bg-white rounded-full h-14 p-5" type="text" placeholder="Phone Number*">
                   <!-- input4 -->
-                   <input class="bg-white rounded-full h-14" type="email" placeholder="Enter your mail*">
-                   <textarea class="bg-white rounded-xl h-60 md:col-span-2" placeholder="Write your massage here*" name="" id="" cols="30" rows="10"></textarea>
+                   <input class="bg-white rounded-full h-14 p-5" type="email" placeholder="Enter your mail*">
+                   <textarea class="bg-white rounded-xl h-60 md:col-span-2 p-5" placeholder="Write your massage here*" name="" id="" cols="30" rows="10"></textarea>
 
                    <a class="btn rounded-full bg-primary mt-5 md:col-span-2 border-primary">
-                    <h3 class="text-black">Book Consult</h3>
-                    <div class="w-8 h-8 border bg-black rounded-full">
+                    <h3 class="text-black font-extrabold">Book Consult</h3>
+                    <div class="w-8 h-8 border-black bg-black rounded-full">
                         <i class="fa-solid fa-arrow-right text-xl text-white -rotate-45"></i>
                     </div>
                 </a>
@@ -347,18 +351,18 @@
         <div class="w-11/12 mx-auto flex flex-col items-center gap-6">
             <div class="flex">
                 <!-- footer logo -->
-                <div class="w-8 h-8 border bg-primary rounded-full">
-                    <i class="fa-solid fa-arrow-right text-xl -rotate-45 ml-1"></i>
+                <div class="w-8 h-8 border-primary bg-primary rounded-full text-center">
+                    <i class="fa-solid fa-arrow-right text-xl -rotate-45"></i>
                 </div>
-                <h1 class="text-2xl font-bold ml-4 text-white">Rinterio</h1>
+                <h1 class="text-2xl font-extrabold ml-4 text-white">Rinterio</h1>
             </div> 
             <!-- footer text -->
-            <p class="text-white text-xs text-center">The barn house captivates with its blend of rustic charm and
+            <p class="text-para text-base text-center">The barn house captivates with its blend of rustic charm and
                 modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
         </div>
         <!-- footer menubar -->
         <div class="flex flex-col md:flex-row md:ml-[340px] mt-8">
-            <ul class="menu menu-horizontal  flex items-center flex-col md:flex-row text-lg font-medium gap-12">
+            <ul class="menu menu-horizontal  flex items-center flex-col md:flex-row text-lg font-medium gap-4 md:gap-12">
                 <li class="text-white font-semibold">
                     <a href="#">Home</a>
                 </li>
@@ -379,8 +383,8 @@
         <!-- footer button -->
         <div class="text-center">
             <a class="btn rounded-full bg-primary mt-5 border-primary">
-            <h3 class="text-black">Book Consult</h3>
-            <div class="w-8 h-8 border bg-black rounded-full">
+            <h3 class="text-black font-extrabold">Book Consult</h3>
+            <div class="w-8 h-8 border-black bg-black rounded-full">
                 <i class="fa-solid fa-arrow-right text-xl text-white -rotate-45"></i>
             </div>
         </a>
